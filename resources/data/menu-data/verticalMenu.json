@@ -1,0 +1,85 @@
+{
+    "menu": [
+        {
+            "url": "admin.dashboard",
+            "name": "Dashboard",
+            "icon": "home",
+            "slug": "admin/dashboard"
+        },
+        {
+            "url": "admin.user.index",
+            "name": "Customer",
+            "icon": "user",
+            "slug": "admin/user",
+            "permission": "show_customer"
+        },
+        {
+            "url": "admin.product.index",
+            "name": "Products",
+            "icon": "shopping-bag",
+            "slug": "admin/product",
+            "permission": "show_product"
+        },
+        {
+            "url": "admin.quotes.index",
+            "name": "Quotes",
+            "icon": "clipboard",
+            "slug": "admin/quotes",
+            "permission": "show_quote"
+        },
+        {
+            "url": "admin.order.index",
+            "name": "Orders",
+            "icon": "shopping-cart",
+            "slug": "admin/order",
+            "permission": "show_order"
+        },
+        {
+            "url": "admin.invoice.index",
+            "name": "Invoice",
+            "icon": "file",
+            "slug": "admin/invoice",
+            "permission": "show_invoice"
+        },
+        {
+            "url": "admin.artwork.index",
+            "name": "Artworks",
+            "icon": "tablet",
+            "slug": "admin/artwork",
+            "permission": "show_artwork"
+        },
+        {
+            "name": "Role & Permissions",
+            "icon": "users",
+            "slug": "admin/role-management",
+            "permission": "show_role",
+            "submenu": [
+                {
+                    "url": "admin.role.index",
+                    "name": "Roles",
+                    "icon": "sliders",
+                    "slug": "admin/role-management/role*"
+                },
+                {
+                    "url": "admin.permission.index",
+                    "name": "Permission",
+                    "icon": "key",
+                    "slug": "admin/role-management/permission*"
+                },
+                {
+                    "url": "admin.staff.index",
+                    "name": "User",
+                    "icon": "user",
+                    "slug": "admin/role-management/staff*"
+                }
+            ]
+        },
+        {
+            "url": "admin.setting.edit",
+            "name": "Settings",
+            "icon": "settings",
+            "slug": "admin/setting",
+            "permission": "edit_setting"
+        }
+    ]
+}

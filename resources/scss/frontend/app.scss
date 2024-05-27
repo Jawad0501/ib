@@ -1,0 +1,37 @@
+/*
+Template Name: IB Software
+Author: Deepgreen Studios
+Version: 1.0.0
+Website: https://deepgreen.studio
+Contact: info@deepgreen.studio
+File: Main Css File
+*/
+
+//Fonts
+@import "custom/fonts/fonts";
+
+
+//Core files
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "custom/variables";
+@import "custom/utilities";
+
+/* Stuctures */
+@import "custom/structure/wrapper";
+@import "custom/structure/header";
+@import "custom/structure/aside";
+@import "custom/structure/right-bar";
+
+
+
+/* Sections */
+@import "custom/sections/dashboard";
+@import "custom/sections/profile";
+
+
+/* Components */
+@import "custom/components/helper";
+
+@import "bootstrap/scss/bootstrap";

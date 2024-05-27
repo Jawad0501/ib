@@ -1,0 +1,76 @@
+//
+// helper.scss
+//
+
+.row > * {
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+.text-dark {
+    color: $dark !important;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+.text-grey {
+    color: $grey;
+}
+.shape-primary {
+    background-color: rgba($primary, 0.1);
+}
+.shape-secondary {
+    background-color: rgba($secondary, 0.1);
+}
+.shape-info {
+    background-color: rgba($info, 0.1);
+}
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+/*******font-size*******/
+@for $i from 11 through 30 {
+    .fs-#{$i} {
+        font-size: $i + px !important;
+    }
+}
+
+.bg-overlay {
+    background-color: rgba($dark, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.overlay-bg {
+    background-color: rgba($dark, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9;
+}
+
+::selection {
+    color: $white;
+    background: $primary;
+}
+.form-check-input:focus {
+    border-color: $dark;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba($dark, 0.25) !important;
+}

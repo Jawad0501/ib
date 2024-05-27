@@ -1,0 +1,69 @@
+$font-family-sans-serif: $font-primary;
+$font-family-base: var(--#{$prefix}font-sans-serif);
+
+
+$primary: #5CB1FF;
+$secondary: #3DD598;
+$dark: #000000;
+$light: #f2f2f2;
+$grey: #888888;
+
+$body-color: $dark;
+$body-bg: #FAFAFB;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "info": $info,
+  "grey": $grey,
+);
+
+$pagination-color: $dark;
+$pagination-active-color: $light;
+$pagination-active-bg: #000000;
+$pagination-active-border-color: $dark;
+$pagination-focus-box-shadow: $dark;
+
+$form-check-input-bg: $light;
+$form-check-input-checked-bg-color: $dark;
+$form-check-input-checked-border-color: $dark;
+$form-check-input-width: 26px;
+$form-check-input-height: 26px;
+$form-switch-focus-color: $dark;
+$form-switch-checked-color: $dark;
+
+$h1-font-size: $font-size-base * 2.75; // 44px
+$h2-font-size: $font-size-base * 2.25; // 36px
+$h3-font-size: $font-size-base * 1.875; // 30px
+$h4-font-size: $font-size-base * 1.625; // 26px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base * 1.125; // 18px
+
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+@mixin scrollbar($horizontal: true) {
+    &::-webkit-scrollbar {
+        @if $horizontal {
+			width: 2px;
+		}
+		@else {
+			height: 2px;
+		}
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+    }
+}

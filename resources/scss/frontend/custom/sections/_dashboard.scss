@@ -1,0 +1,43 @@
+section {
+    padding: 30px 0;
+    .welcome-div {
+        padding: 40px 30px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        color: $white;
+    }
+    .recent-view {
+        height: 175px;
+        background-color: $grey;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .btn-table {
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background-color: #EFEFEF;
+        font-size: 14px;
+        color: $dark;
+        padding: 8px 12px;
+        // width: 100%;
+        // display: block;
+        text-align: center;
+        // &:not(:first-child) {
+        //     margin-left: 8px;
+        // }
+        &.active {
+            background-color: #000000;
+            color: #EFEFEF;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "menu": [
+        {
+            "url": "admin.dashboard",
+            "name": "Dashboards",
+            "icon": "home",
+            "slug": "admin/dashboard"
+        },
+        {
+            "url": "admin.user.index",
+            "name": "Customer",
+            "icon": "user",
+            "slug": "admin/user"
+        },
+        {
+            "url": "admin.product.index",
+            "name": "Product",
+            "icon": "shopping-bag",
+            "slug": "admin/product"
+        },
+        {
+            "url": "admin.quotes.index",
+            "name": "Quotes",
+            "icon": "clipboard",
+            "slug": "admin/quotes"
+        },
+        {
+            "url": "admin.order.index",
+            "name": "Orders",
+            "icon": "shopping-cart",
+            "slug": "admin/order",
+            "badge": 4
+        },
+        {
+            "url": "admin.proof.index",
+            "name": "Artoworks",
+            "icon": "tablet",
+            "slug": "admin/proof"
+        },
+        {
+            "url": "admin.invoice.index",
+            "name": "Invoice",
+            "icon": "file",
+            "slug": "admin/invoice"
+        },
+        {
+            "name": "Role & Permissions",
+            "icon": "settings",
+            "slug": "admin/role-management",
+            "submenu": [
+              {
+                "url": "admin.user.index",
+                "name": "Analytics",
+                "icon": "activity",
+                "slug": "dashboard-analytics"
+              }
+            ]
+        }
+    ]
+}

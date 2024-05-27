@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .text-start {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-end {
+            text-align: right;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .fw-medium {
+            font-weight: 500;
+        }
+
+        .border-none {
+            border: none;
+        }
+
+        body {
+            font-family: 'Baloo 2', cursive;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .heading {
+            display: flex;
+            margin-bottom: 30px;
+            /* flex-direction: column; */
+            overflow: hidden;
+            justify-content: space-between;
+        }
+
+        .heading-one,
+        .heading-two {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 576px) {
+            .heading {
+                flex-direction: row;
+
+            }
+            .heading-one,
+            .heading-two {
+                width: 50%;
+                /* float: left;
+                display: inline-block; */
+            }
+            .table {
+                text-align: center;
+            }
+        }
+
+        .heading_logo_info {
+            width: 50%;
+        }
+
+        .heading-info {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .heading-info li {
+            margin-bottom: 10px;
+        }
+
+        .table-content,
+        .print-info {
+            border: 3px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .table {
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            padding: 3px;
+            font-size: 12px;
+        }
+
+        .table th {
+            border-bottom: 3px solid #9E9E9E;
+        }
+
+        .table td {
+            border-bottom: 2px solid #9E9E9E;
+        }
+
+        .table-footer {
+            max-width: 400px;
+            margin-left: auto;
+            border-bottom: 2px solid;
+        }
+
+        .table-footer-content {
+            padding: 4px 10px;
+        }
+
+        .print-info {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-one,
+        .footer-two {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 576px) {
+            .footer {
+                flex-direction: row;
+            }
+
+            .table-footer-content {
+                margin-left: 100px;
+            }
+
+            .footer-one,
+            .footer-two {
+                width: 50%;
+            }
+
+            td:nth-of-type(2) {
+                text-align: left;
+            }
+        }
+        @media print {
+            .d-none  {
+                display: none;
+            }
+        }
+
+        .btn-place {
+            padding: 8px 16px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn-place:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" id="GFG">
+        <div class="heading">
+            <div class="heading-one">
+                <img src="http://ib-software-new.test/storage/setting/PRyN5KJBqQjU3IrR.png" alt="Laravel" width="150px" />
+                <br />
+                <ul class="heading-info">
+                    <li>
+                        <strong>Invoice To:</strong>
+                        <p>
+                            Emran Hoq<br />
+                            Immersive Brands<br />
+                            Floor 14<br />
+                            25 Cabot Square<br />
+                            London<br />
+                            E14 4QZ<br />
+                            United Kingdom
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Customer Telephone:</strong> 959-541-3204
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="heading-two">
+                <h2>Quote No: IB00016</h2>
+                <h3>Quotes are valid for 30 days.</h3>
+                <ul class="heading-info">
+                    <li>
+                        <strong>Customer:</strong> Sujit Sarkar
+                    </li>
+                    <li>
+                        <strong>Company: </strong>Sujit Sarkar Ltd
+                    </li>
+                    <li>
+                        <strong>Date: </strong> 18 Jul 2023 10:12
+                    </li>
+                </ul>
+                <ul class="heading-info">
+                    <li>
+                        <strong>Delivery Address :</strong>
+                        <p>
+                            27664<br />
+                            230 Jayne RampHolliestad, WA 84545-7692<br />
+                            Palestinian Territories<br />
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="table-content">
+                <div class="table-responsive">
+                    <table class="table w-100">
+                        <thead>
+                            <tr>
+                                <th width="10%">Qty</th>
+                                <th width="40%">Item Name</th>
+                                <th width="10%">SKU</th>
+                                <th width="15%">Total Net</th>
+                                <th width="10%">Vat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                            <tr>
+                                    <td>6</td>
+                                    <td>Metal Name Badge</td>
+                                    <td>97091</td>
+                                    <td>£1,252.80</td>
+                                    <td>20.00%</td>
+                                </tr>
+                                                    </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <div class="table-footer-content">
+                        <div class="d-flex justify-content-between">
+                            <h3>Subtotal</h3>
+                            <h3>£1,044.00</h3>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h3 class="fw-medium">VAT @ 20%</h3>
+                            <h3 class="fw-medium">
+                                £208.80</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-footer">
+                    <div class="table-footer-content">
+                        <div class="d-flex justify-content-between">
+                            <h2>Total</h2>
+                            <h3>£1,252.80</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-footer" style="border-bottom: none">
+                    <div class="table-footer-content">
+                        <div class="d-flex justify-content-between">
+                            <h3 class="fw-medium">Paid to date</h3>
+                            <h3 class="fw-medium">£0.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="print-info">
+                <h3>PRINT INFORMATION</h3>
+            </div>
+        </div>
+        <div class="footer justify-content-center">
+            
+            <div class="text-center">
+                <ul class="heading-info" style="margin-top: 0">
+                    <li>
+                        <strong>VAT number:</strong> 921090850
+                    </li>
+                    <li>
+                        <strong>Telephone - 01825 723832</strong>
+                    </li>
+                </ul>
+                
+                <div style="margin-bottom: 10px;">
+                    <p><strong></strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center d-none">
+            <button onclick="window.print()" class="btn-place">Print</button>
+        </div>
+    </div>
+</body>
+
+</html>

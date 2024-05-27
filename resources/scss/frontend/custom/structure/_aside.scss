@@ -1,0 +1,101 @@
+.aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    background-color: $white;
+    height: 100%;
+    z-index: 9;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    &.toggled {
+        left: 0;
+    }
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        img {
+            width: 150px;
+        }
+    }
+    .asidebar {
+        padding-left: 0;
+        margin-bottom: 0;
+        padding: 20px;
+        .aside-item {
+            display: block;
+            .aside-link {
+                display: block;
+                padding: 10px;
+                border-radius: 16px;
+                -webkit-border-radius: 16px;
+                -moz-border-radius: 16px;
+                -ms-border-radius: 16px;
+                -o-border-radius: 16px;
+                color: $grey;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                span {
+                    font-weight: $font-weight-medium;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 8px;
+                }
+                &.active,
+                &:hover {
+                    background-color: #000000;
+                    color: $white;
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 5px;
+                @include media-breakpoint-up(sm) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .aside-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        // display: none;
+        .aside-footer-con {
+            background-color: $dark;
+            text-align: center;
+            color: $white;
+            padding: 20px 20px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            @include media-breakpoint-up(sm) {
+                padding: 30px 20px;
+            }
+            @include media-breakpoint-up(xxl) {
+                padding: 40px 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+            .btn {
+                background-color: $white;
+                color: $dark;
+                font-weight: $font-weight-semibold;
+            }
+        }
+    }
+}
